@@ -19,27 +19,34 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-standard": "^5.0.0"
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^2.3.2"
   },
-  {
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "plugins": ["import", "node", "promise", "standard"],
+  "plugins": [
+    "import",
+    "node",
+    "promise",
+    "standard"
+  ],
   "env": {
     "browser": true,
-    "node": true,
+    "node": true
   },
   "extends": [
     "eslint:recommended",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "no-console": "error"
   }
-}
 }
